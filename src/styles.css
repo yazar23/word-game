@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Center the content and set a readable font */
+body {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+/* Style the “Check” button */
+#check {
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+/* Feedback messages */
+#feedback {
+  margin-top: 1em;
+  font-weight: bold;
+}
