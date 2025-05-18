@@ -53,7 +53,7 @@ const MultipleChoiceGame: React.FC<MultipleChoiceGameProps> = ({ gameDirection }
     setIsCorrect(correct);
     updateStats(correct);
     if (correct) {
-  const correctSound = new Audio('/correct.mp3');
+  const correctSound = new Audio(`${import.meta.env.BASE_URL}correct.mp3`);
   correctSound.play().catch((error) => {
     console.error("Audio playback failed:", error);
   });
