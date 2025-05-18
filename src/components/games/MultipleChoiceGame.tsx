@@ -52,7 +52,7 @@ const MultipleChoiceGame: React.FC<MultipleChoiceGameProps> = ({ gameDirection }
     const correct = answer === correctAnswer;
     setIsCorrect(correct);
     updateStats(correct);
-    if (answer === correctAnswer) {
+    if (correct) {
   const correctSound = new Audio('/correct.mp3');
   correctSound.play();
 }
