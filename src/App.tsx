@@ -28,17 +28,7 @@ function App() {
           © 2025 Turkish-English Vocabulary Game. All rights reserved.
         </footer>
       </div>
-      <button
-  style={{ padding: '10px', backgroundColor: 'red', color: 'white' }}
-  onClick={() => {
-    const testSound = new Audio('/correct.mp3');
-    testSound.play();
-  }}
->
-  Test Sound
-</button>
-
-    </ThemeProvider>
+   </ThemeProvider>
   );
 }
 
