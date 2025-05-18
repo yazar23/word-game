@@ -58,6 +58,12 @@ const MultipleChoiceGame: React.FC<MultipleChoiceGameProps> = ({ gameDirection }
     console.error("Audio playback failed:", error);
   });
 }
+   if (!correct) {
+  const wrongSound = new Audio(`${import.meta.env.BASE_URL}wrong.mp3`);
+  wrongSound.play().catch((error) => {
+    console.error("Wrong answer sound failed:", error);
+  });
+} 
   };
 
   const handleNextWord = () => {
